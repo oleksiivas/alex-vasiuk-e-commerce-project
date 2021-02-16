@@ -49,7 +49,7 @@ app.use(express.static(path.join(__dirname, 'public')))
    .use('/vasiukProve05', prove05Routes)
    .get('/', (req, res, next) => {
      // This is the primary index, always handled last. 
-     res.render('pages/index', {title: 'Welcome to my CSE341 repo', path: '/'});
+     res.render('pages/index', {title: 'Welcome to the e-commerce', path: '/'});
     })
    .use(errorController.get404Error)
    .listen(PORT, () => console.log(`Listening on ${ PORT }`));
